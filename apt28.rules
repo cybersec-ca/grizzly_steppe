@@ -5,7 +5,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "kavkazcentr.info"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000904; rev: 1;)
+      sid: 911000897; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -13,7 +13,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "kavkazcentr.info"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000905; rev: 1;)
+      sid: 911000898; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -22,7 +22,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "rnil.am"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000906; rev: 1;)
+      sid: 911000899; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -30,7 +30,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "rnil.am"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000907; rev: 1;)
+      sid: 911000900; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -39,7 +39,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "standartnevvs.com"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000908; rev: 1;)
+      sid: 911000901; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -47,7 +47,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "standartnevvs.com"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000909; rev: 1;)
+      sid: 911000902; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -56,7 +56,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "novinitie.com"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000910; rev: 1;)
+      sid: 911000903; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -64,7 +64,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "novinitie.com"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000911; rev: 1;)
+      sid: 911000904; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -73,7 +73,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "n0vinite.com"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000912; rev: 1;)
+      sid: 911000905; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -81,7 +81,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "n0vinite.com"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000913; rev: 1;)
+      sid: 911000906; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -90,7 +90,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "qov.hu.com"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000914; rev: 1;)
+      sid: 911000907; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -98,7 +98,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "qov.hu.com"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000915; rev: 1;)
+      sid: 911000908; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -107,7 +107,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "q0v.pl"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000916; rev: 1;)
+      sid: 911000909; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -115,7 +115,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "q0v.pl"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000917; rev: 1;)
+      sid: 911000910; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -124,7 +124,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "mail.g0v.pl"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000918; rev: 1;)
+      sid: 911000911; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -132,7 +132,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "mail.g0v.pl"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000919; rev: 1;)
+      sid: 911000912; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -141,7 +141,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "poczta.mon.q0v.pl"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000920; rev: 1;)
+      sid: 911000913; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -149,7 +149,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "poczta.mon.q0v.pl"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000921; rev: 1;)
+      sid: 911000914; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -158,7 +158,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "baltichost.org"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000922; rev: 1;)
+      sid: 911000915; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -166,7 +166,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "baltichost.org"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000923; rev: 1;)
+      sid: 911000916; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -175,7 +175,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "nato.nshq.in"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000924; rev: 1;)
+      sid: 911000917; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -183,7 +183,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "nato.nshq.in"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000925; rev: 1;)
+      sid: 911000918; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -192,7 +192,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "natoexhibitionff14.com"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000926; rev: 1;)
+      sid: 911000919; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -200,7 +200,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "natoexhibitionff14.com"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000927; rev: 1;)
+      sid: 911000920; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -209,7 +209,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "login-osce.org"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000928; rev: 1;)
+      sid: 911000921; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -217,7 +217,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "login-osce.org"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000929; rev: 1;)
+      sid: 911000922; rev: 1;)
 
 
 alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -226,7 +226,7 @@ alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "smigroup-online.co.uk"; nocase; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000930; rev: 1;)
+      sid: 911000923; rev: 1;)
 
 
 alert http $HOME_NET any -> $EXTERNAL_NET any ( \
@@ -234,5 +234,5 @@ alert http $HOME_NET any -> $EXTERNAL_NET any ( \
       content: "smigroup-online.co.uk"; nocase; http_header; \
       classtype: bad-unknown; \
       reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000931; rev: 1;)
+      sid: 911000924; rev: 1;)
 

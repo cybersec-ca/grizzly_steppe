@@ -1,0 +1,136 @@
+
+alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] DNS request natoexhibitionff14.com"; \
+      dns_query; \
+      content: "natoexhibitionff14.com"; nocase; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000925; rev: 1;)
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] HTTP request natoexhibitionff14.com"; \
+      content: "natoexhibitionff14.com"; nocase; http_header; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000926; rev: 1;)
+
+
+alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] DNS request webmail-saic.com"; \
+      dns_query; \
+      content: "webmail-saic.com"; nocase; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000927; rev: 1;)
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] HTTP request webmail-saic.com"; \
+      content: "webmail-saic.com"; nocase; http_header; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000928; rev: 1;)
+
+
+alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] DNS request tolonevvs.com"; \
+      dns_query; \
+      content: "tolonevvs.com"; nocase; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000929; rev: 1;)
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] HTTP request tolonevvs.com"; \
+      content: "tolonevvs.com"; nocase; http_header; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000930; rev: 1;)
+
+
+alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] DNS request academl.com"; \
+      dns_query; \
+      content: "academl.com"; nocase; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000931; rev: 1;)
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] HTTP request academl.com"; \
+      content: "academl.com"; nocase; http_header; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000932; rev: 1;)
+
+
+alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] DNS request vice-news.com"; \
+      dns_query; \
+      content: "vice-news.com"; nocase; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000933; rev: 1;)
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] HTTP request vice-news.com"; \
+      content: "vice-news.com"; nocase; http_header; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000934; rev: 1;)
+
+
+alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] DNS request log-in-osce.org"; \
+      dns_query; \
+      content: "log-in-osce.org"; nocase; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000935; rev: 1;)
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] HTTP request log-in-osce.org"; \
+      content: "log-in-osce.org"; nocase; http_header; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000936; rev: 1;)
+
+
+alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] DNS request eurosatory2014.com"; \
+      dns_query; \
+      content: "eurosatory2014.com"; nocase; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000937; rev: 1;)
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] HTTP request eurosatory2014.com"; \
+      content: "eurosatory2014.com"; nocase; http_header; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000938; rev: 1;)
+
+
+alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] DNS request mail.hm.qov.hu"; \
+      dns_query; \
+      content: "mail.hm.qov.hu"; nocase; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000939; rev: 1;)
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any ( \
+      msg: "[OP PAWN STORM] HTTP request mail.hm.qov.hu"; \
+      content: "mail.hm.qov.hu"; nocase; http_header; \
+      classtype: bad-unknown; \
+      reference: url, www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-pawn-storm.pdf; \
+      sid: 911000940; rev: 1;)
+
