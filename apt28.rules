@@ -1,238 +1,28 @@
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request kavkazcentr.info"; \
-      dns_query; \
-      content: "kavkazcentr.info"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000897; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request kavkazcentr.info"; \
-      content: "kavkazcentr.info"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000898; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request rnil.am"; \
-      dns_query; \
-      content: "rnil.am"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000899; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request rnil.am"; \
-      content: "rnil.am"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000900; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request standartnevvs.com"; \
-      dns_query; \
-      content: "standartnevvs.com"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000901; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request standartnevvs.com"; \
-      content: "standartnevvs.com"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000902; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request novinitie.com"; \
-      dns_query; \
-      content: "novinitie.com"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000903; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request novinitie.com"; \
-      content: "novinitie.com"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000904; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request n0vinite.com"; \
-      dns_query; \
-      content: "n0vinite.com"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000905; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request n0vinite.com"; \
-      content: "n0vinite.com"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000906; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request qov.hu.com"; \
-      dns_query; \
-      content: "qov.hu.com"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000907; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request qov.hu.com"; \
-      content: "qov.hu.com"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000908; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request q0v.pl"; \
-      dns_query; \
-      content: "q0v.pl"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000909; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request q0v.pl"; \
-      content: "q0v.pl"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000910; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request mail.g0v.pl"; \
-      dns_query; \
-      content: "mail.g0v.pl"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000911; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request mail.g0v.pl"; \
-      content: "mail.g0v.pl"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000912; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request poczta.mon.q0v.pl"; \
-      dns_query; \
-      content: "poczta.mon.q0v.pl"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000913; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request poczta.mon.q0v.pl"; \
-      content: "poczta.mon.q0v.pl"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000914; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request baltichost.org"; \
-      dns_query; \
-      content: "baltichost.org"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000915; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request baltichost.org"; \
-      content: "baltichost.org"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000916; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request nato.nshq.in"; \
-      dns_query; \
-      content: "nato.nshq.in"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000917; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request nato.nshq.in"; \
-      content: "nato.nshq.in"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000918; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request natoexhibitionff14.com"; \
-      dns_query; \
-      content: "natoexhibitionff14.com"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000919; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request natoexhibitionff14.com"; \
-      content: "natoexhibitionff14.com"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000920; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request login-osce.org"; \
-      dns_query; \
-      content: "login-osce.org"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000921; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request login-osce.org"; \
-      content: "login-osce.org"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000922; rev: 1;)
-
-
-alert dns $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] DNS request smigroup-online.co.uk"; \
-      dns_query; \
-      content: "smigroup-online.co.uk"; nocase; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000923; rev: 1;)
-
-
-alert http $HOME_NET any -> $EXTERNAL_NET any ( \
-      msg: "[APT28] HTTP request smigroup-online.co.uk"; \
-      content: "smigroup-online.co.uk"; nocase; http_header; \
-      classtype: bad-unknown; \
-      reference: url, www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html; \
-      sid: 911000924; rev: 1;)
-
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,baltichost.org"; nocase; classtype: bad-unknown; sid: 911001775;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,baltichost.org"; nocase; http_header; classtype: bad-unknown; sid: 911001776;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,kavkazcentr.info"; nocase; classtype: bad-unknown; sid: 911001777;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,kavkazcentr.info"; nocase; http_header; classtype: bad-unknown; sid: 911001778;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,login-osce.org"; nocase; classtype: bad-unknown; sid: 911001779;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,login-osce.org"; nocase; http_header; classtype: bad-unknown; sid: 911001780;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,mail.g0v.pl"; nocase; classtype: bad-unknown; sid: 911001781;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,mail.g0v.pl"; nocase; http_header; classtype: bad-unknown; sid: 911001782;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,n0vinite.com"; nocase; classtype: bad-unknown; sid: 911001783;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,n0vinite.com"; nocase; http_header; classtype: bad-unknown; sid: 911001784;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,nato.nshq.in"; nocase; classtype: bad-unknown; sid: 911001785;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,nato.nshq.in"; nocase; http_header; classtype: bad-unknown; sid: 911001786;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,natoexhibitionff14.com"; nocase; classtype: bad-unknown; sid: 911001787;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,natoexhibitionff14.com"; nocase; http_header; classtype: bad-unknown; sid: 911001788;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,novinitie.com"; nocase; classtype: bad-unknown; sid: 911001789;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,novinitie.com"; nocase; http_header; classtype: bad-unknown; sid: 911001790;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,poczta.mon.q0v.pl"; nocase; classtype: bad-unknown; sid: 911001791;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,poczta.mon.q0v.pl"; nocase; http_header; classtype: bad-unknown; sid: 911001792;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,q0v.pl"; nocase; classtype: bad-unknown; sid: 911001793;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,q0v.pl"; nocase; http_header; classtype: bad-unknown; sid: 911001794;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,qov.hu.com"; nocase; classtype: bad-unknown; sid: 911001795;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,qov.hu.com"; nocase; http_header; classtype: bad-unknown; sid: 911001796;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,rnil.am"; nocase; classtype: bad-unknown; sid: 911001797;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,rnil.am"; nocase; http_header; classtype: bad-unknown; sid: 911001798;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,smigroup-online.co.uk"; nocase; classtype: bad-unknown; sid: 911001799;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,smigroup-online.co.uk"; nocase; http_header; classtype: bad-unknown; sid: 911001800;)
+alert dns any any -> any any (msg: "APT28 DNS request"; dns_query; content: "APT28,standartnevvs.com"; nocase; classtype: bad-unknown; sid: 911001801;)
+alert http any any -> any any (msg: "APT28 HTTP request"; content: "APT28,standartnevvs.com"; nocase; http_header; classtype: bad-unknown; sid: 911001802;)
